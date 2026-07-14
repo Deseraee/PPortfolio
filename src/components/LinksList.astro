@@ -1,0 +1,57 @@
+<section class="links-section wrap">
+  <p class="label">featured links</p>
+  <ul class="links-list">
+    <li>
+      <a href="#" class="link-row">
+        <span class="link-label">Design System Guide</span>
+        <span class="link-meta label">2024</span>
+        <span class="link-arrow">→</span>
+      </a>
+    </li>
+    <!-- More links -->
+  </ul>
+</section>
+
+<style>
+  .links-section {
+    padding-bottom: var(--space-6);
+  }
+  
+  .links-list {
+    list-style: none;
+    margin: var(--space-2) 0 0;
+    padding: 0;
+    border-top: 1px solid var(--color-line);
+  }
+  
+  .link-row {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    padding: var(--space-2) 0;
+    text-decoration: none;
+    color: var(--color-ink);
+    border-bottom: 1px solid var(--color-line);
+  }
+  
+  .link-label {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+  }
+  
+  .link-meta {
+    color: var(--color-ink-soft);
+  }
+  
+  .link-arrow {
+    margin-left: auto;
+    color: var(--color-accent);
+    opacity: 0;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  
+  .link-row:hover .link-arrow {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+</style>
