@@ -1,20 +1,19 @@
 :root {
-    --color-bg: #F2F4F7;
-    --color-ink: #10151C;
-    --color-ink-soft: #4A5568;
-    --color-line: #D7DCE3;
-    --color-accent: #4B5FD1;
-    
-    --font-display: "Fraunces", Georgia, serif;
-    --font-body: "Inter", -apple-system, sans-serif;
-    --font-mono: "IBM Plex Mono", "Courier New", monospace;
-    
-    --space-1: 0.5rem;
-    --space-2: 1rem;
-    --space-3: 1.75rem;
-    --space-4: 3rem;
-    --space-5: 5rem;
-    --space-6: 8rem;
-    --max-width: 880px;
-  }
-  
+  --color-bg: #F8FAFC;           
+  --color-ink: #0F172A;          
+  --color-ink-soft: #64748B;     
+  --color-line: #E2E8F0;         
+  --color-accent: #3B82F6;       
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.75rem;
+  --space-4: 3rem;
+  --space-5: 5rem;
+  --space-6: 8rem;
+  --max-width: 880px;
+}

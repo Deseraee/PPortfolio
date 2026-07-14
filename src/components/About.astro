@@ -1,0 +1,214 @@
+---
+// About component
+---
+
+<section class="about wrap">
+  <div class="about-grid">
+    <!-- Left: Text Content -->
+    <div class="about-content">
+      <div class="about-header">
+        <span class="label about-label">ABOUT</span>
+        <a href="/about" class="about-link">in <span class="arrow">→</span></a>
+      </div>
+      
+      <h1 class="about-name">Hi, I'm Deserae Mendoza!</h1>
+      
+      <p class="about-title">SOFTWARE ENGINEERING INTERN · UC Santa Barbara</p>
+      
+      <p class="about-bio">
+        Building high-impact software with technical integrity, creative imagination, and a user-first focus.
+      </p>
+      
+      <div class="about-actions">
+        <a href="/portfolio" class="btn btn-primary">VIEW TECHNICAL PORTFOLIO</a>
+        <a href="/resume.pdf" class="btn btn-secondary">DOWNLOAD FULL RESUME (PDF)</a>
+      </div>
+    </div>
+    
+    <!-- Right: Headshot Circle -->
+    <div class="about-image">
+      <div class="headshot-circle">
+        <!-- Update this path to your image -->
+        <img 
+          src="/HEADSHOTS/deserae_ucsb_edu-2a242974-original.jpg" 
+          alt="Deserae M" 
+          class="headshot"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-4);
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-4);
+    align-items: start;
+    max-width: 880px;
+  }
+  
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-line);
+    padding-bottom: var(--space-1);
+  }
+  
+  .about-label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--color-ink-soft);
+    text-transform: uppercase;
+  }
+  
+  .about-link {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--color-ink-soft);
+    transition: color 0.15s ease;
+  }
+  
+  .about-link:hover {
+    color: var(--color-accent);
+  }
+  
+  .about-link .arrow {
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
+  
+  .about-link:hover .arrow {
+    transform: translateX(3px);
+  }
+  
+  .about-name {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 3.8rem);
+    font-weight: 600;
+    line-height: 1.1;
+    margin: var(--space-2) 0 var(--space-1) 0;
+    color: var(--color-ink);
+  }
+  
+  .about-title {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: var(--color-ink-soft);
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+  }
+  
+  .about-bio {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--color-ink);
+    max-width: 600px;
+    margin-bottom: var(--space-4);
+  }
+  
+  .about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  
+  .btn {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.85rem 1.5rem;
+    border-radius: 4px;
+    transition: transform 0.15s ease, background 0.15s ease;
+    letter-spacing: 0.02em;
+  }
+  
+  .btn-primary {
+    background: var(--color-ink);
+    color: var(--color-bg);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    background: var(--color-accent);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: var(--color-ink);
+    border: 1px solid var(--color-line);
+  }
+  
+  .btn-secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+  
+  /* Headshot Circle */
+  .about-image {
+    flex-shrink: 0;
+  }
+  
+  .headshot-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-line);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .headshot-circle:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .headshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+    
+    .about-image {
+      order: -1;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .headshot-circle {
+      width: 140px;
+      height: 140px;
+    }
+    
+    .about-actions {
+      flex-direction: column;
+    }
+    
+    .about-actions .btn {
+      text-align: center;
+    }
+  }
+</style>
